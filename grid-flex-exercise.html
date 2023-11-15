@@ -1,0 +1,97 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid & flex exercise</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      #container {
+        max-width: 1024px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+      }
+      #container div {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar {
+        grid-column: span 7;
+        background-color: black;
+        color: white;
+      }
+      .sidebar {
+        grid-column: span 2;
+        grid-row: span 8;
+        background-color: black;
+        color: white;
+      }
+      .content {
+        background-color: rgba(252, 223, 160, 0.486);
+        color: black;
+      }
+
+      .footer {
+        grid-column: span 7;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="navbar">navbar</div>
+      <div class="sidebar">sidebar</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="content">content</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
